@@ -15,7 +15,7 @@ class line():
             raise ValueError("error: direction vector can't be null")
 
 def magnitude(self):
-    magnitude = (self[0]**2 + self[1]**2 + self[2]**2)**(1/2)
+    magnitude = np.dot(self,self)**(1/2)
     return magnitude
 
 def crossProduct(a, b):
